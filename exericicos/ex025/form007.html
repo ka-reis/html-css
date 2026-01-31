@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="formulario.php" method="post">
+        <p>
+            <label for="iest">Selecione um estado: </label>
+            <select name="est" id="iest" required>
+                <option value="" selected>---selecione---</option>
+                <optgroup label="Estados">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="ce">Ceára</option>
+                    <option value="am">Amazonas</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Selecione uma profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof" placeholder="SELECIONE" required>
+            <datalist id="lstprof">
+                <option>Contador</option>
+                <option>Bancario</option>
+                <option>Programador</option>
+                <option>Fazendeiro</option>
+                <option>Camioneiro</option>
+                <option>Faxineiro</option>
+                <option>Motorista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" rows="15" cols="30" placeholder="Nos deixe uma mensagem." maxlength="500"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
