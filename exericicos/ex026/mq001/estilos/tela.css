@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: aliceblue;
+}
+
+header > h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+menu li{
+    display: inline-block;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 20px;
+    margin: 10px 0px 15px 10px;
+}
+
+main{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+main p{
+    margin: 20px 10px 25px 10px;
+}
